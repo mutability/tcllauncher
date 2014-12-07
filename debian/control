@@ -1,0 +1,18 @@
+Source: tcllauncher
+Section: interpreters
+Priority: extra
+Maintainer: Oliver Jowett <oliver@mutability.co.uk>
+Build-Depends: debhelper (>= 8.0.0), tcl8.5-dev, autotools-dev
+Standards-Version: 3.9.4
+Homepage: https://github.com/flightaware/tcllauncher
+Vcs-Git: https://github.com/mutability/tcllauncher.git -b debian-package
+
+Package: tcllauncher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, tcl8.5, tclx8.4
+Description: Launcher program for Tcl applications.
+ tcllauncher is a way to have Tcl programs run out of
+ /usr/local/bin under their own name, be installed in
+ one place with their support files, and provides commands
+ to facilitate server-oriented application execution.
+
