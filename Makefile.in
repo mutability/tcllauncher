@@ -208,9 +208,9 @@ libraries:
 
 DTPLITE=@DTPLITE@
 
-doc:	$(srcdir)/doc/tcllauncher.n
+doc:	$(srcdir)/doc/tcllauncher.1
 
-$(srcdir)/doc/tcllauncher.n:	$(srcdir)/doc/tcllauncher.man
+$(srcdir)/doc/tcllauncher.1:	$(srcdir)/doc/tcllauncher.man
 	@if [ -n "$(DTPLITE)" -a -x "$(DTPLITE)" ]; then \
 	    echo "Building $@"; \
 	    $(DTPLITE) -o $@ nroff $(srcdir)/doc/tcllauncher.man ; \
